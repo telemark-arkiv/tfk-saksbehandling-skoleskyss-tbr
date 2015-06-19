@@ -1,14 +1,14 @@
 'use strict';
 
 var assert = require('assert');
-var transportByNsb = require('../index');
+var transportByTbr = require('../index');
 
-describe('transportByNsb', function() {
+describe('transportByTbr', function() {
 
   it('requires an options object', function(done) {
 
     var options = false;
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     var condition = false;
     if ((result instanceof Error) && /Missing required input: options object/.test(result)) {
       condition = true;
@@ -22,7 +22,7 @@ describe('transportByNsb', function() {
     var options = {
       postnummer: false
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     var condition = false;
     if ((result instanceof Error) && /Missing required input: options.postnummer/.test(result)) {
       condition = true;
@@ -37,7 +37,7 @@ describe('transportByNsb', function() {
       postnummer: true,
       skoleid: false
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     var condition = false;
     if ((result instanceof Error) && /Missing required input: options.skoleid/.test(result)) {
       condition = true;
@@ -52,7 +52,7 @@ describe('transportByNsb', function() {
       postnummer: 3681,
       skoleid: 3735
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     assert.equal(true, result);
     done();
   });
@@ -63,7 +63,7 @@ describe('transportByNsb', function() {
       postnummer: 3681,
       skoleid: 3802
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     assert.equal(false, result);
     done();
   });
@@ -74,7 +74,7 @@ describe('transportByNsb', function() {
       postnummer: 3703,
       skoleid: 3674
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     assert.equal(true, result);
     done();
   });
@@ -85,7 +85,7 @@ describe('transportByNsb', function() {
       postnummer: 3703,
       skoleid: 3802
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     assert.equal(false, result);
     done();
   });
@@ -96,7 +96,7 @@ describe('transportByNsb', function() {
       postnummer: 3753,
       skoleid: 3802
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     assert.equal(true, result);
     done();
   });
@@ -107,7 +107,7 @@ describe('transportByNsb', function() {
       postnummer: 3753,
       skoleid: 3735
     };
-    var result = transportByNsb(options);
+    var result = transportByTbr(options);
     assert.equal(false, result);
     done();
   });

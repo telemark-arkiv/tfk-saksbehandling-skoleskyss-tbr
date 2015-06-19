@@ -1,6 +1,6 @@
 'use strict';
 
-function transportByNsb(options) {
+function transportByTbr(options) {
   if (!options) {
     return new Error('Missing required input: options object');
   }
@@ -40,4 +40,4 @@ function transportByNsb(options) {
 
 }
 
-module.exports = transportByNsb;
+module.exports = transportByTbr;
