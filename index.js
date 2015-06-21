@@ -13,6 +13,7 @@ function transportByTbr(options) {
 
   var skoleBoNome = require('./lib/data/skoleids_bo_nome.json');
   var skoleBo = require('./lib/data/skoleids_bo.json');
+  var skoleDalen = require('./lib/data/skoleids_dalen.json');
   var skoleSeljord = require('./lib/data/skoleids_seljord.json');
   var skoleSkienPgr = require('./lib/data/skoleids_skien_pgr.json');
   var skoleSove = require('./lib/data/skoleids_sove.json');
@@ -26,6 +27,11 @@ function transportByTbr(options) {
   var postnrSeljordKviteseid = require('./lib/data/seljord_kviteseid.json');
   var skoleid = parseInt(options.skoleid, 10);
   var postnummer = parseInt(options.postnummer, 10);
+
+  //Skole - Vest-Telemark vgs. avdeling Dalen - > true
+  if (skoleDalen.indexOf(skoleid) > -1) {
+    return true;
+  }
 
   //Skole - Vest-Telemark vgs.-(Begge avdelinger.) Alle postnummer i Fyresdal, Kviteseid, Nissedal, Tokke og Vinje -> true
   if (skoleVestTelemark.indexOf(skoleid) > -1 && postnrFyresdalKviteseidNissedalTokkeVinje.indexOf(postnummer) > -1) {

@@ -46,6 +46,17 @@ describe('transportByTbr', function() {
     done();
   });
 
+  it('returns true if skole Vest-Telemark (Dalen)', function(done) {
+
+    var options = {
+      postnummer: 3870,
+      skoleid: 3880
+    };
+    var result = transportByTbr(options);
+    assert.equal(true, result);
+    done();
+  });
+
   it('returns true if postnummer Fyresdal og skole Vest-Telemark (Seljord)', function(done) {
 
     var options = {
