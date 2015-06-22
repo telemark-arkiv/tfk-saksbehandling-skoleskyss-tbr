@@ -21,7 +21,7 @@ function transportByTbr(options) {
   var postnrBoGvarvUlefoss = require('./lib/data/bo_gvarv_ulefoss.json');
   var postnrBoNomeSkienGvarv = require('./lib/data/bo_nome_skien_gvarv.json');
   var postnrBoSauheradUlefoss = require('./lib/data/bo_sauherad_ulefoss.json');
-  var postnrFyresdalKviteseidNissedalTokkeVinje = require('./lib/data/fyresdal_kviteseid_nissedal_tokke_vinje.json');
+  var postnrSeljordFyresdalKviteseidNissedalTokkeVinje = require('./lib/data/seljord_fyresdal_kviteseid_nissedal_tokke_vinje.json');
   var postnrNomeSauheradBo = require('./lib/data/nome_sauherad_bo.json');
   var postnrPgsSkienSiljan = require('./lib/data/pgr_skien_siljan.json');
   var postnrSeljordKviteseid = require('./lib/data/seljord_kviteseid.json');
@@ -33,8 +33,8 @@ function transportByTbr(options) {
     return true;
   }
 
-  //Skole - Vest-Telemark vgs.-(Begge avdelinger.) Alle postnummer i Fyresdal, Kviteseid, Nissedal, Tokke og Vinje -> true
-  if (skoleVestTelemark.indexOf(skoleid) > -1 && postnrFyresdalKviteseidNissedalTokkeVinje.indexOf(postnummer) > -1) {
+  //Skole - Vest-Telemark vgs.-(Begge avdelinger.) Alle postnummer i Seljord, Fyresdal, Kviteseid, Nissedal, Tokke og Vinje -> true
+  if (skoleVestTelemark.indexOf(skoleid) > -1 && postnrSeljordFyresdalKviteseidNissedalTokkeVinje.indexOf(postnummer) > -1) {
     return true;
   }
 
