@@ -18,6 +18,7 @@ function transportByTbr(options) {
   var skoleSkienPgr = require('./lib/data/skoleids_skien_pgr.json');
   var skoleSove = require('./lib/data/skoleids_sove.json');
   var skoleVestTelemark = require('./lib/data/skoleids_vest_telemark.json');
+  var skoleKvitsund = require('./lib/data/skoleids_kvitsund.json');
   var postnrBoGvarvUlefoss = require('./lib/data/bo_gvarv_ulefoss.json');
   var postnrBoNomeSkienGvarv = require('./lib/data/bo_nome_skien_gvarv.json');
   var postnrBoSauheradUlefoss = require('./lib/data/bo_sauherad_ulefoss.json');
@@ -30,6 +31,11 @@ function transportByTbr(options) {
 
   //Skole - Vest-Telemark vgs. avdeling Dalen - > true
   if (skoleDalen.indexOf(skoleid) > -1) {
+    return true;
+  }
+
+  //Skole - Kvitsund gymnas - > true
+  if (skoleKvitsund.indexOf(skoleid) > -1) {
     return true;
   }
 

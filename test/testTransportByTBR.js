@@ -211,4 +211,15 @@ describe('transportByTbr', function() {
     done();
   });
 
+  it('returns true if skole Kvitsund gymnas', function(done) {
+
+    var options = {
+      postnummer: 3681,
+      skoleid: 3850
+    };
+    var result = transportByTbr(options);
+    assert.equal(true, result);
+    done();
+  });
+
 });
