@@ -54,7 +54,7 @@ generateDataFiles({apiUrl:apiUrl, queryList:['Seljord'], extras:[3836, 3850], fi
 });
 
 //generates files for 3803 Bø, 3810 og 3834 Gvarv samt 3830 og 3831 Ulefoss
-generateDataFiles({apiUrl:apiUrl, queryList:[], extras:[3803, 3810, 3831, 3834], fileName:'bo_gvarv_ulefoss.json'}, function(error, data) {
+generateDataFiles({apiUrl:apiUrl, queryList:[], extras:[3803, 3810, 3830, 3831, 3834], fileName:'bo_gvarv_ulefoss.json'}, function(error, data) {
   if (error) {
     console.error(error);
   } else {

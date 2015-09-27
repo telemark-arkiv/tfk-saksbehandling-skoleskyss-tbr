@@ -222,4 +222,15 @@ describe('transportByTbr', function() {
     done();
   });
 
+  it('returns true if skole is Bø vgs and postnummer 3830 Ulefoss', function(done) {
+
+    var options = {
+      postnummer: 3830,
+      skoleid: 3802
+    };
+    var result = transportByTbr(options);
+    assert.equal(true, result);
+    done();
+  });
+
 });
