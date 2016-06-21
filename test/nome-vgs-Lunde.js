@@ -11,34 +11,46 @@ options.postnummer = 3960
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3960 Stathelle')
 
 options.postnummer = 3961
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3960 Stathelle')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3961 Stathelle')
 
 options.postnummer = 3962
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3960 Stathelle')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3962 Stathelle')
 
 options.postnummer = 3965
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3960 Stathelle')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3965 Stathelle')
 
 options.postnummer = 3966
-tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3960 Stathelle')
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3966 Stathelle')
 
 options.postnummer = 3970
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3970 Langesund')
 
 options.postnummer = 3993
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3970 Langesund')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3993 Langesund')
 
 options.postnummer = 3994
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3970 Langesund')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3994 Langesund')
 
 options.postnummer = 3995
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3960 Stathelle')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3995 Stathelle')
 
-options.postnummer = 3990
-tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3999 Stathelle-Herre')
+options.postnummer = 3999
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3999 Stathelle-Herre')
+
+options.postnummer = 3800
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3800 Bø i Telemark')
+
+options.postnummer = 3801
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3801 Bø i Telemark')
+
+options.postnummer = 3802
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3802 Bø i Telemark')
 
 options.postnummer = 3803
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3803 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3804 Bø i Telemark')
+
+options.postnummer = 3804
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3805 Bø i Telemark')
 
 options.postnummer = 3885
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3885 Fyresdal')

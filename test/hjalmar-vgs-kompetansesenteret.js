@@ -32,7 +32,7 @@ options.postnummer = 3825
 tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3825 Lunde')
 
 options.postnummer = 3830
-tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 2830 Ulefoss')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3830 Ulefoss')
 
 options.postnummer = 3672
 tap.equal(isTbr(options), false, 'Hjalmar-vgs-Kompetansenteret returns false from 3672 Notodden')
@@ -50,16 +50,16 @@ options.postnummer = 3805
 tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3805 Bø i Telemark, Seljord')
 
 options.postnummer = 3840
-tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3805 Seljord')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3840 Seljord')
 
 options.postnummer = 3841
-tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3805 Flatdal')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3841 Flatdal')
 
 options.postnummer = 3702
 tap.equal(isTbr(options), false, 'Hjalmar-vgs-Kompetansenteret returns false from 3702 Skien')
 
 options.postnummer = 3729
-tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3702 Skien')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Kompetansenteret returns true from 3729 Skien')
 
 options.postnummer = 3652
 tap.equal(isTbr(options), false, 'Hjalmar-vgs-Kompetansenteret returns false from 3652 Hovin i Telemark')

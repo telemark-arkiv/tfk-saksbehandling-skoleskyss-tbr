@@ -26,4 +26,4 @@ options.postnummer = 3729
 tap.equal(isTbr(options), true, 'Bamble Grasmyr returns true from 3729 Skien')
 
 options.postnummer = 3652
-tap.equal(isTbr(options), false, 'Bamble Grasmyr returns false from 3729 Hovin i Telemark')
+tap.equal(isTbr(options), false, 'Bamble Grasmyr returns false from 3652 Hovin i Telemark')
