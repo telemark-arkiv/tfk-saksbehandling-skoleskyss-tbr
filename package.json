@@ -1,6 +1,6 @@
 {
   "name": "tfk-saksbehandling-skoleskyss-tbr",
-  "version": "5.0.1",
+  "version": "4.0.0",
   "description": "Checks if TBR is transporter",
   "license": "MIT",
   "author": {
@@ -8,16 +8,9 @@
     "email": "geir.gasodden@pythonia.no",
     "url": "https://github.com/zrrrzzt"
   },
-  "contributors": [
-    {
-      "name": "Jørgen Johansen",
-      "email": "post@jorgenjohansen.no",
-      "url": "https://jorgenjohansen.no"
-    }
-  ],
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.5"
+    "node": ">=0.12.0"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
@@ -42,7 +35,9 @@
   "devDependencies": {
     "coveralls": "2.11.9",
     "standard": "7.1.2",
-    "tap": "5.7.3",
-    "valid-url": "1.0.9"
+    "tap": "5.7.2"
+  },
+  "dependencies":{
+    "is-file": "1.0.0"
   }
 }
