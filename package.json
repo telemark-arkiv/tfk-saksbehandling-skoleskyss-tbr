@@ -35,9 +35,9 @@
   "devDependencies": {
     "coveralls": "2.11.9",
     "standard": "7.1.2",
-    "tap": "5.7.2"
+    "tap": "5.8.0"
   },
-  "dependencies":{
+  "dependencies": {
     "is-file": "1.0.0"
   }
 }
