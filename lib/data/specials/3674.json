@@ -1,0 +1,104 @@
+{
+  "3801": [
+    {
+      "name": "Flatinvegen",
+      "range": {
+        "min": 10,
+        "max": 123
+      }
+    },
+    {
+      "name": "Gvarvvegen",
+      "range": {
+        "min": 150,
+        "max": 333
+      }
+    }
+  ],
+  "3810": [
+    {
+      "name": "Heivegen",
+      "range": {
+        "min": 17,
+        "max": 195
+      }
+    },
+    {
+      "name": "Strannavegen",
+      "range": {
+        "min": 98,
+        "max": 826
+      }
+    },
+    {
+      "name": "Myrlandvegen",
+      "range": {
+        "min": 24,
+        "max": 73
+      }
+    },
+    {
+      "name": "Kåsavegen",
+      "range": {
+        "min": 7,
+        "max": 101
+      }
+    },
+    {
+      "name": "Haugenvegen",
+      "range": {
+        "min": 30,
+        "max": 44
+      }
+    },
+    {
+      "name": "Sulukollvegen",
+      "range": {
+        "min": 16,
+        "max": 103
+      }
+    },
+    {
+      "name": "Årnes Brygge",
+      "range": {
+        "min": 5,
+        "max": 104
+      }
+    },
+    {
+      "name": "Noradalsvegen",
+      "range": {
+        "min": 1,
+        "max": 21
+      }
+    },
+    {
+      "name": "Bøvegen",
+      "range": {
+        "min": 93,
+        "max": 317
+      }
+    },
+    {
+      "name": "Håtveitvegen",
+      "range": {
+        "min": 124,
+        "max": 150
+      }
+    },
+    {
+      "name": "Østtveitvegen",
+      "range": {
+        "min": 49,
+        "max": 51
+      }
+    },
+    {
+      "name": "Ødegårdsvegen",
+      "range": {
+        "min": 17,
+        "max": 41
+      }
+    }
+  ]
+}

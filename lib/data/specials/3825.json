@@ -1,0 +1,324 @@
+{
+  "3810": [
+    {
+      "name": "Heivegen",
+      "range": {
+        "min": 17,
+        "max": 195
+      }
+    },
+    {
+      "name": "Strannavegen",
+      "range": {
+        "min": 1,
+        "max": 826
+      }
+    },
+    {
+      "name": "Myrlandvegen",
+      "range": {
+        "min": 24,
+        "max": 73
+      }
+    },
+    {
+      "name": "Kåsavegen",
+      "range": {
+        "min": 7,
+        "max": 101
+      }
+    },
+    {
+      "name": "Haugenvegen",
+      "range": {
+        "min": 30,
+        "max": 44
+      }
+    },
+    {
+      "name": "Sulukollvegen",
+      "range": {
+        "min": 16,
+        "max": 103
+      }
+    },
+    {
+      "name": "Årnes Brygge",
+      "range": {
+        "min": 5,
+        "max": 104
+      }
+    },
+    {
+      "name": "Noradalsvegen",
+      "range": {
+        "min": 1,
+        "max": 21
+      }
+    },
+    {
+      "name": "Kåsinvegen",
+      "range": {
+        "min": 1,
+        "max": 20
+      }
+    },
+    {
+      "name": "Sjøbuhaugen",
+      "range": {
+        "min": 2,
+        "max": 20
+      }
+    },
+    {
+      "name": "Oredalen",
+      "range": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "name": "Hetterudvegen",
+      "range": {
+        "min": 5,
+        "max": 102
+      }
+    },
+    {
+      "name": "Åsvegen",
+      "range": {
+        "min": 2,
+        "max": 53
+      }
+    },
+    {
+      "name": "Håtveitvegen",
+      "range": {
+        "min": 1,
+        "max": 150
+      }
+    },
+    {
+      "name": "Østtveitvegen",
+      "range": {
+        "min": 1,
+        "max": 51
+      }
+    },
+    {
+      "name": "Grannevegen",
+      "range": {
+        "min": 5,
+        "max": 30
+      }
+    },
+    {
+      "name": "Juvevegen",
+      "range": {
+        "min": 2,
+        "max": 11
+      }
+    },
+    {
+      "name": "Bøvegen",
+      "range": {
+        "min": 1,
+        "max": 184
+      }
+    },
+    {
+      "name": "Ødegårdsvegen",
+      "range": {
+        "min": 3,
+        "max": 41
+      }
+    }
+  ],
+  "3830":[
+  	{
+  	  "name": "Skiensvegen",
+      "range": {
+        "min": 86,
+        "max": 750
+  	 }
+    },
+    {
+  	  "name": "Namløsvegen",
+      "range": {
+        "min": 30,
+        "max": 134
+  	 }
+    },
+    {
+  	  "name": "Grønvoldvegen",
+      "range": {
+        "min": 290,
+        "max": 705
+  	 }
+    },
+     {
+  	  "name": "Grønsteinvegen",
+      "range": {
+        "min": 25,
+        "max": 85
+  	 }
+    },
+    {
+  	  "name": "Omtvedtvegen",
+      "range": {
+        "min": 44,
+        "max": 118
+  	 }
+    },
+    {
+  	  "name": "Kollevegen",
+      "range": {
+        "min": 8,
+        "max": 70
+  	 }
+    },
+    {
+  	  "name": "Jøntvedtvegen",
+      "range": {
+        "min": 4,
+        "max": 73
+  	 }
+  	},
+  	 {
+  	  "name": "Jakobskåsvegen",
+      "range": {
+        "min": 14,
+        "max": 14
+  	 }
+  	},
+    {
+  	  "name": "Helgvinvegen",
+      "range": {
+        "min": 5,
+        "max": 21
+  	 }
+  	},
+  	{
+  	  "name": "Sverdsteinvegen",
+      "range": {
+        "min": 2,
+        "max": 28
+  	 }
+  	},
+  	{
+  	  "name": "Prestegravvegen",
+      "range": {
+        "min": 32,
+        "max": 122
+  	 }
+  	},
+  	{
+  	  "name": "Olsbryggevegen",
+      "range": {
+        "min": 5,
+        "max": 225
+  	 }
+  	},
+  	{
+  	  "name": "Nesetvegen",
+      "range": {
+        "min": 40,
+        "max": 128
+  	 }
+  	},
+  	{
+  	  "name": "Ytterbøvegen",
+      "range": {
+        "min": 19,
+        "max": 39
+  	 }
+  	},
+  	{
+  	  "name": "Hjelsethvegen",
+      "range": {
+        "min": 2,
+        "max": 140
+  	 }
+  	},
+  	{
+  	  "name": "Håvevegen",
+      "range": {
+        "min": 2,
+        "max": 91
+  	 }
+  	},
+  	{
+  	  "name": "Sjørholtvegen",
+      "range": {
+        "min": 19,
+        "max": 132
+  	 }
+  	},
+  	{
+  	  "name": "Langelandvegen",
+      "range": {
+        "min": 72,
+        "max": 95
+  	 }
+  	},
+  {
+  	  "name": "Romnesvegen",
+      "range": {
+        "min": 115,
+        "max": 132
+  	 }
+  	},
+  {
+  	  "name": "Slåttekåsvegen",
+      "range": {
+        "min": 58,
+        "max": 102
+  	 }
+  	},
+  	 {
+  	  "name": "Sannesåsvegen",
+      "range": {
+        "min": 37,
+        "max": 68
+  	 }
+  	},
+	{
+  	  "name": "Sannesvegen",
+      "range": {
+        "min": 71,
+        "max": 135
+  	 }
+  	},
+	{
+  	  "name": "Sauheradvegen",
+      "range": {
+        "min": 581,
+        "max": 587
+  	 }
+  	},
+  	{
+  	  "name": "Helgvinsvingen",
+      "range": {
+        "min": 8,
+        "max": 13
+  	 }
+  	}
+
+  ],
+  "3801":[
+  	{
+  	  "name": "Flatinvegen",
+      "range": {
+        "min": 10,
+        "max": 123
+  	 }
+    },
+    {
+  	  "name": "Gvarvvegen",
+      "range": {
+        "min": 150,
+        "max": 333
+  	 }
+    }
+ ]
+}

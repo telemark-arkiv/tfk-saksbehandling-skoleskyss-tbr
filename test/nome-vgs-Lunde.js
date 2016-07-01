@@ -4,7 +4,9 @@ const tap = require('tap')
 const isTbr = require('../index')
 var options = {
   skoleid: 3825,
-  postnummer: ''
+  postnummer: '',
+  gatenavn: 'Djevelgaten',
+  husnummer: '666'
 }
 
 options.postnummer = 3960
@@ -34,23 +36,11 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3994
 options.postnummer = 3995
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3995 Stathelle')
 
-options.postnummer = 3999
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3999 Stathelle-Herre')
-
-options.postnummer = 3800
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3800 Bø i Telemark')
-
 options.postnummer = 3801
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3801 Bø i Telemark')
-
-options.postnummer = 3802
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3802 Bø i Telemark')
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3801 Bø i Telemark')
 
 options.postnummer = 3803
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3804 Bø i Telemark')
-
-options.postnummer = 3804
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3805 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3803 Bø i Telemark')
 
 options.postnummer = 3885
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3885 Fyresdal')
@@ -211,7 +201,7 @@ options.postnummer = 3805
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3805 Bø i Telemark')
 
 options.postnummer = 3835
-tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3805 Seljord')
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3835 Seljord')
 
 options.postnummer = 3840
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3840 Seljord')
@@ -378,3 +368,368 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3799
 
 options.postnummer = 3652
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from 3652 Hovin i Telemark')
+
+// Specials ----- Start
+options.postnummer = 3810
+options.gatenavn = 'Heivegen'
+options.husnummer = 17
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Heivegen 17 Gvarv')
+
+options.husnummer = 16
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Heivegen 16 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Strannavegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Strannavegen 1 Gvarv')
+
+options.husnummer = 827
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Strannavegen 827 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Myrlandvegen'
+options.husnummer = 24
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Myrlandvegen 24 Gvarv')
+
+options.husnummer = 74
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Myrlandvegen 74 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Kåsavegen'
+options.husnummer = 7
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Kåsavegen 7 Gvarv')
+
+options.husnummer = 102
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Kåsavegen 102 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Haugenvegen'
+options.husnummer = 30
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Haugenvegen 30 Gvarv')
+
+options.husnummer = 45
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Haugenvegen 45 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Sulukollvegen'
+options.husnummer = 16
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Haugenvegen 16 Gvarv')
+
+options.husnummer = 104
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Haugenvegen 104 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Årnes Brygge'
+options.husnummer = 5
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Årnes Brygge 5 Gvarv')
+
+options.husnummer = 105
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Årnes Brygge 105 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Noradalsvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Noradalsvegen 1 Gvarv')
+
+options.husnummer = 22
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Noradalsvegen 21 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Kåsinvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Kåsinvegen 1 Gvarv')
+
+options.husnummer = 21
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Kåsinvegen 21 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Sjøbuhaugen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Sjøbuhaugen 2 Gvarv')
+
+options.husnummer = 21
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Sjøbuhaugen 21 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Oredalen'
+options.husnummer = 10
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Oredalen 10 Gvarv')
+
+options.husnummer = 16
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Oredalen 16 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Hetterudvegen'
+options.husnummer = 5
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Hetterudvegen 5 Gvarv')
+
+options.husnummer = 103
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Hetterudvegen 103 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Åsvegen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Åsvegen 2 Gvarv')
+
+options.husnummer = 54
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Åsvegen 54 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Håtveitvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Håtveitvegen 1 Gvarv')
+
+options.husnummer = 151
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Håtveitvegen 151 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Østtveitvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Østtveitvegen 1 Gvarv')
+
+options.husnummer = 52
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Østtveitvegen 52 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Grannevegen'
+options.husnummer = 5
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Grannevegen 5 Gvarv')
+
+options.husnummer = 31
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Grannevegen 31 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Juvevegen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Juvevegen 2 Gvarv')
+
+options.husnummer = 12
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Juvevegen 12 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Bøvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Bøvegen 184 Gvarv')
+
+options.husnummer = 185
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Bøvegen 185 Gvarv')
+
+options.postnummer = 3810
+options.gatenavn = 'Ødegårdsvegen'
+options.husnummer = 3
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Ødegårdsvegen 3 Gvarv')
+
+options.husnummer = 42
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Ødegårdsvegen 42 Gvarv')
+
+// 3830 ULEFOSS
+
+options.postnummer = 3830
+options.gatenavn = 'Skiensvegen'
+options.husnummer = 86
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Skiensvegen 86 Ulefoss')
+
+options.husnummer = 751
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Skiensvegen 751 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Namløsvegen'
+options.husnummer = 30
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Namløsvegen 30 Ulefoss')
+
+options.husnummer = 135
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Namløsvegen 135 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Grønvoldvegen'
+options.husnummer = 290
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Grønvoldvegen 290 Ulefoss')
+
+options.husnummer = 706
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Grønvoldvegen 706 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Grønsteinvegen'
+options.husnummer = 25
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Grønsteinvegen 25 Ulefoss')
+
+options.husnummer = 86
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Grønsteinvegen 86 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Omtvedtvegen'
+options.husnummer = 44
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Omtvedtvegen 44 Ulefoss')
+
+options.husnummer = 119
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Omtvedtvegen 119 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Kollevegen'
+options.husnummer = 8
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Kollevegen 8 Ulefoss')
+
+options.husnummer = 71
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Kollevegen 71 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Jøntvedtvegen'
+options.husnummer = 4
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Jøntvedtvegen 4 Ulefoss')
+
+options.husnummer = 74
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Jøntvedtvegen 74 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Jakobskåsvegen'
+options.husnummer = 14
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Jakobskåsvegen 14 Ulefoss')
+
+options.husnummer = 15
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Jakobskåsvegen 15 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Helgvinvegen'
+options.husnummer = 5
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Helgvinvegen 5 Ulefoss')
+
+options.husnummer = 22
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Helgvinvegen 22 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Sverdsteinvegen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Sverdsteinvegen 2 Ulefoss')
+
+options.husnummer = 29
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Sverdsteinvegen 29 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Prestegravvegen'
+options.husnummer = 32
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Prestegravvegen 32 Ulefoss')
+
+options.husnummer = 123
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Prestegravvegen 123 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Olsbryggevegen'
+options.husnummer = 5
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Olsbryggevegen 5 Ulefoss')
+
+options.husnummer = 226
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Olsbryggevegen 226 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Nesetvegen'
+options.husnummer = 40
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Nesetvegen 40 Ulefoss')
+
+options.husnummer = 129
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Nesetvegen 129 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Ytterbøvegen'
+options.husnummer = 19
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Ytterbøvegen 19 Ulefoss')
+
+options.husnummer = 40
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Ytterbøvegen 40 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Hjelsethvegen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Hjelsethvegen 2 Ulefoss')
+
+options.husnummer = 141
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Hjelsethvegen 141 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Håvevegen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Håvevegen 2 Ulefoss')
+
+options.husnummer = 92
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Håvevegen 92 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Sjørholtvegen'
+options.husnummer = 19
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Sjørholtvegen 19 Ulefoss')
+
+options.husnummer = 133
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Sjørholtvegen 133 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Langelandvegen'
+options.husnummer = 72
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Langelandvegen 72 Ulefoss')
+
+options.husnummer = 96
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Langelandvegen 96 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Romnesvegen'
+options.husnummer = 115
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Romnesvegen 155 Ulefoss')
+
+options.husnummer = 133
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Romnesvegen 133 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Slåttekåsvegen'
+options.husnummer = 58
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Slåttekåsvegen 58 Ulefoss')
+
+options.husnummer = 103
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Slåttekåsvegen 103 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Sannesåsvegen'
+options.husnummer = 37
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Sannesåsvegen 37 Ulefoss')
+
+options.husnummer = 69
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Sannesåsvegen 69 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Sannesvegen'
+options.husnummer = 71
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Sannesvegen 71 Ulefoss')
+
+options.husnummer = 136
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Sannesvegen 136 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Sauheradvegen'
+options.husnummer = 581
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Sauheradvegen 581 Ulefoss')
+
+options.husnummer = 588
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Sauheradvegen 588 Ulefoss')
+
+options.postnummer = 3830
+options.gatenavn = 'Helgvinsvingen'
+options.husnummer = 8
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Helgvinsvingen 8 Ulefoss')
+
+options.husnummer = 14
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Helgvinsvingen 14 Ulefoss')
+
+// 3801 Bø i Telemark
+
+options.postnummer = 3801
+options.gatenavn = 'Flatinvegen'
+options.husnummer = 10
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Flatinvegen 10 Ulefoss')
+
+options.husnummer = 124
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Flatinvegen 124 Ulefoss')
+
+options.postnummer = 3801
+options.gatenavn = 'Gvarvvegen'
+options.husnummer = 150
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Gvarvvegen 150 Bø i Telemark')
+
+options.husnummer = 334
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Gvarvvegen 334 Bø i Telemark')

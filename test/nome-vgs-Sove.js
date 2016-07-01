@@ -4,7 +4,9 @@ const tap = require('tap')
 const isTbr = require('../index')
 var options = {
   skoleid: 3830,
-  postnummer: ''
+  postnummer: '',
+  gatenavn: 'Djevelgaten',
+  husnummer: '666'
 }
 
 options.postnummer = 3960
@@ -411,3 +413,7 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3799
 
 options.postnummer = 3652
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Søve returns false from 3652 Hovin i Telemark')
+
+// 3803 Bø i Telemark Hovedregel SANN - Specials er også SANN
+
+// 3810 Gvarv Hovedregel SANN - Specials er også SANN
