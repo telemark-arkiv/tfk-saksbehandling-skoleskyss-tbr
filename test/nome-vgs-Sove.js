@@ -262,6 +262,12 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3841
 options.postnummer = 3844
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Søve returns false from 3844 Åmotsdal')
 
+// Siljan
+options.postnummer = 3748
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3748 Siljan')
+options.postnummer = 3749
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3749 Siljan')
+
 // Skien
 options.postnummer = 3701
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3701 Skien')
@@ -271,141 +277,6 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3702
 
 options.postnummer = 3703
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3703 Skien')
-
-options.postnummer = 3704
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3704 Skien')
-
-options.postnummer = 3705
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3705 Skien')
-
-options.postnummer = 3707
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3707 Skien')
-
-options.postnummer = 3710
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3710 Skien')
-
-options.postnummer = 3711
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3711 Skien')
-
-options.postnummer = 3712
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3712 Skien')
-
-options.postnummer = 3713
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3713 Skien')
-
-options.postnummer = 3714
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3714 Skien')
-
-options.postnummer = 3715
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3715 Skien')
-
-options.postnummer = 3716
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3716 Skien')
-
-options.postnummer = 3717
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3717 Skien')
-
-options.postnummer = 3718
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3718 Skien')
-
-options.postnummer = 3719
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3719 Skien')
-
-options.postnummer = 3720
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3720 Skien')
-
-options.postnummer = 3721
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3721 Skien')
-
-options.postnummer = 3722
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3722 Skien')
-
-options.postnummer = 3723
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3723 Skien')
-
-options.postnummer = 3724
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3724 Skien')
-
-options.postnummer = 3725
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3725 Skien')
-
-options.postnummer = 3726
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3726 Skien')
-
-options.postnummer = 3727
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3727 Skien')
-
-options.postnummer = 3728
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3728 Skien')
-
-options.postnummer = 3729
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3729 Skien')
-
-options.postnummer = 3730
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3730 Skien')
-
-options.postnummer = 3731
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3731 Skien')
-
-options.postnummer = 3732
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3732 Skien')
-
-options.postnummer = 3733
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3733 Skien')
-
-options.postnummer = 3734
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3734 Skien')
-
-options.postnummer = 3735
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3735 Skien')
-
-options.postnummer = 3736
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3736 Skien')
-
-options.postnummer = 3737
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3737 Skien')
-
-options.postnummer = 3738
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3738 Skien')
-
-options.postnummer = 3739
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3739 Skien')
-
-options.postnummer = 3740
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3740 Skien')
-
-options.postnummer = 3741
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3741 Skien')
-
-options.postnummer = 3742
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3742 Skien')
-
-options.postnummer = 3743
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3743 Skien')
-
-options.postnummer = 3744
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3744 Skien')
-
-options.postnummer = 3746
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3756 Skien')
-
-options.postnummer = 3747
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3747 Skien')
-
-options.postnummer = 3785
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3785 Skien')
-
-options.postnummer = 3787
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3787 Skien')
-
-options.postnummer = 3792
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3792 Skien')
-
-options.postnummer = 3796
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3796 Skien')
-
-options.postnummer = 3798
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3798 Skien')
 
 options.postnummer = 3799
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3799 Skien')

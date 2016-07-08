@@ -1,4 +1,279 @@
 {
+  "3803": [
+      {
+        "name": "Bakåskollen",
+        "range": {
+          "min": 1,
+          "max": 13
+        }
+      },
+      {
+        "name": "Bakåsvegen",
+        "range": {
+          "min": 2,
+          "max": 168
+        }
+      },
+      {
+        "name": "Bergestigvegen",
+        "range": {
+          "min": 6,
+          "max": 54
+        }
+      },
+      {
+        "name": "Berglandvegen",
+        "range": {
+          "min": 8,
+          "max": 60
+        }
+      },
+      {
+        "name": "Brekkegrendvegen",
+        "range": {
+          "min": 369,
+          "max": 750
+        }
+      },
+      {
+        "name": "Breskelivegen",
+        "range": {
+          "min": 21,
+          "max": 139
+        }
+      },
+      {
+        "name": "Eikavegen",
+        "range": {
+          "min": 64,
+          "max": 64
+        }
+      },
+      {
+        "name": "Espedalsvegen",
+        "range": {
+          "min": 22,
+          "max": 109
+        }
+      },
+      {
+        "name": "Forbergvegen",
+        "range": {
+          "min": 11,
+          "max": 250
+        }
+      },
+      {
+        "name": "Friheimvegen",
+        "range": {
+          "min": 1,
+          "max": 23
+        }
+      },
+      {
+        "name": "Garvikstrondi",
+        "range": {
+          "min": 1143,
+          "max": 1193
+        }
+      },
+      {
+        "name": "Garvikstrondi",
+        "range": {
+          "min": 1195,
+          "max": 1195
+        }
+      },
+      {
+        "name": "Garvikstrondi",
+        "range": {
+          "min": 1234,
+          "max": 1235
+        }
+      },
+      {
+        "name": "Garvikvegen",
+        "range": {
+          "min": 28,
+          "max": 316
+        }
+      },
+      {
+        "name": "Gravevegen",
+        "range": {
+          "min": 62,
+          "max": 68
+        }
+      },
+      {
+        "name": "Gregars veg",
+        "range": {
+          "min": 40,
+          "max": 90
+        }
+      },
+      {
+        "name": "Jønnebergvegen",
+        "range": {
+          "min": 15,
+          "max": 400
+        }
+      },
+      {
+        "name": "Lensegravvegen",
+        "range": {
+          "min": 1,
+          "max": 13
+        }
+      },
+      {
+        "name": "Livegen",
+        "range": {
+          "min": 14,
+          "max": 370
+        }
+      },
+      {
+        "name": "Løvskeidåsen",
+        "range": {
+          "min": 1,
+          "max": 24
+        }
+      },
+      {
+        "name": "Mastedalvegen",
+        "range": {
+          "min": 8,
+          "max": 126
+        }
+      },
+      {
+        "name": "Midtbøvegen",
+        "range": {
+          "min": 1,
+          "max": 52
+        }
+      },
+      {
+        "name": "Nigardsguto",
+        "range": {
+          "min": 20,
+          "max": 50
+        }
+      },
+      {
+        "name": "Nordbøbakken",
+        "range": {
+          "min": 2,
+          "max": 12
+        }
+      },
+      {
+        "name": "Nordbølia",
+        "range": {
+          "min": 2,
+          "max": 53
+        }
+      },
+      {
+        "name": "Nordbøvegen",
+        "range": {
+          "min": 8,
+          "max": 191
+        }
+      },
+      {
+        "name": "Rueguto",
+        "range": {
+          "min": 5,
+          "max": 107
+        }
+      },
+      {
+        "name": "Sandamoen",
+        "range": {
+          "min": 1,
+          "max": 6
+        }
+      },
+      {
+        "name": "Seljordvegen",
+        "range": {
+          "min": 23,
+          "max": 49
+        }
+      },
+      {
+        "name": "Seljordvegen",
+        "range": {
+          "min": 89,
+          "max": 1128
+        }
+      },
+      {
+        "name": "Skoevegen",
+        "range": {
+          "min": 1,
+          "max": 7
+        }
+      },
+      {
+        "name": "Stavsholtvegen",
+        "range": {
+          "min": 20,
+          "max": 453
+        }
+      },
+      {
+        "name": "Stavsholtvegen",
+        "range": {
+          "min": 535,
+          "max": 659
+        }
+      },
+      {
+        "name": "Sønstebøvegen",
+        "range": {
+          "min": 21,
+          "max": 61
+        }
+      },
+      {
+        "name": "Sønstigardvegen",
+        "range": {
+          "min": 6,
+          "max": 67
+        }
+      },
+      {
+        "name": "Torsbergåsen",
+        "range": {
+          "min": 1,
+          "max": 12
+        }
+      },
+      {
+        "name": "Tveitanvegen",
+        "range": {
+          "min": 19,
+          "max": 88
+        }
+      },
+      {
+        "name": "Vollevegen",
+        "range": {
+          "min": 4,
+          "max": 33
+        }
+      },
+      {
+        "name": "Vreimsida",
+        "range": {
+          "min": 83,
+          "max": 926
+        }
+      }
+    ],
   "3810": [
     {
       "name": "Heivegen",

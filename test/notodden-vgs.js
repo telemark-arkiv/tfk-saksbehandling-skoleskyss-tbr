@@ -12,9 +12,6 @@ var options = {
 options.postnummer = 3960
 tap.equal(isTbr(options), false, 'Notodden vgs returns false from 3960 Stathelle')
 
-options.postnummer = 3803
-tap.equal(isTbr(options), true, 'Notodden vgs returns true from 3803 Bø i Telemark')
-
 options.postnummer = 3750
 tap.equal(isTbr(options), false, 'Notodden vgs returns false from 3750 Drangedal')
 
@@ -51,6 +48,311 @@ tap.equal(isTbr(options), true, 'Notodden vgs returns true from Gvarvvegen 150 G
 
 options.husnummer = 334
 tap.equal(isTbr(options), false, 'Notodden vgs returns false from Gvarvvegen 334 Gvarv')
+
+// 3803 Bø i Telemark
+options.postnummer = 3803
+options.gatenavn = 'Bakåskollen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, ' returns true from Bakåskollen 1 Bø i Telemark')
+
+options.husnummer = 14
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Bakåskollen 14 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Bakåsvegen'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Bakåskollen 2 Bø i Telemark')
+
+options.husnummer = 169
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Bakåskollen 169 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Bergestigvegen'
+options.husnummer = 6
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Bergestigvegen 6 Bø i Telemark')
+
+options.husnummer = 55
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Bergestigvegen 55 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Berglandvegen'
+options.husnummer = 8
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Bergestigvegen 8 Bø i Telemark')
+
+options.husnummer = 61
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Bergestigvegen 61 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Brekkegrendvegen'
+options.husnummer = 369
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Brekkegrendvegen 369 Bø i Telemark')
+
+options.husnummer = 751
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Brekkegrendvegen 751 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Breskelivegen'
+options.husnummer = 21
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Breskelivegen 21 Bø i Telemark')
+
+options.husnummer = 140
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Breskelivegen 140 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Eikavegen'
+options.husnummer = 64
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Eikavegen 21 Bø i Telemark')
+
+options.husnummer = 65
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Eikavegen 65 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Espedalsvegen'
+options.husnummer = 22
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Espedalsvegen 22 Bø i Telemark')
+
+options.husnummer = 110
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Espedalsvegen 110 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Forbergvegen'
+options.husnummer = 11
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Forbergvegen 11 Bø i Telemark')
+
+options.husnummer = 251
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Forbergvegen 251 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Friheimvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Friheimvegen 1 Bø i Telemark')
+
+options.husnummer = 24
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Friheimvegen 24 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Garvikstrondi'
+options.husnummer = 1143
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Garvikstrondi 1143 Bø i Telemark')
+
+options.husnummer = 1194
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Garvikstrondi 1194 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Garvikstrondi'
+options.husnummer = 1195
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Garvikstrondi 1195 Bø i Telemark')
+
+options.husnummer = 1196
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Garvikstrondi 1196 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Garvikstrondi'
+options.husnummer = 1234
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Garvikstrondi 1234 Bø i Telemark')
+
+options.husnummer = 1236
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Garvikstrondi 1236 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Garvikvegen'
+options.husnummer = 28
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Garvikvegen 28 Bø i Telemark')
+
+options.husnummer = 317
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Garvikvegen 317 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Gregars veg'
+options.husnummer = 40
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Gravevegen 40 Bø i Telemark')
+
+options.husnummer = 91
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Gravevegen 91 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Jønnebergvegen'
+options.husnummer = 15
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Jønnebergvegen 15 Bø i Telemark')
+
+options.husnummer = 401
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Jønnebergvegen 401 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Lensegravvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Lensegravvegen 1 Bø i Telemark')
+
+options.husnummer = 14
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Lensegravvegen 14 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Livegen'
+options.husnummer = 14
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Livegen 14 Bø i Telemark')
+
+options.husnummer = 371
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Livegen 371 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Løvskeidåsen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Livegen 1 Bø i Telemark')
+
+options.husnummer = 25
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Livegen 25 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Mastedalvegen'
+options.husnummer = 8
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Livegen 8 Bø i Telemark')
+
+options.husnummer = 127
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Livegen 127 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Midtbøvegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Midtbøvegen 1 Bø i Telemark')
+
+options.husnummer = 53
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Midtbøvegen 53 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Nigardsguto'
+options.husnummer = 20
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Nigardsguto 20 Bø i Telemark')
+
+options.husnummer = 51
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Nigardsguto 51 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Nordbøbakken'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Nordbøbakken 2 Bø i Telemark')
+
+options.husnummer = 13
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Nordbøbakken 13 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Nordbølia'
+options.husnummer = 2
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Nordbølia 2 Bø i Telemark')
+
+options.husnummer = 54
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Nordbølia 54 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Nordbøvegen'
+options.husnummer = 8
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Nordbøvegen 8 Bø i Telemark')
+
+options.husnummer = 192
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Nordbøvegen 192 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Rueguto'
+options.husnummer = 5
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Rueguto 5 Bø i Telemark')
+
+options.husnummer = 108
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Rueguto 108 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Sandamoen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Sandamoen 1 Bø i Telemark')
+
+options.husnummer = 7
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Sandamoen 7 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Seljordvegen'
+options.husnummer = 23
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Seljordvegen 23 Bø i Telemark')
+
+options.husnummer = 50
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Seljordvegen 50 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Seljordvegen'
+options.husnummer = 89
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Seljordvegen 89 Bø i Telemark')
+
+options.husnummer = 1129
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Seljordvegen 1129 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Skoevegen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Skoevegen 1 Bø i Telemark')
+
+options.husnummer = 1129
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Seljordvegen 1129 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Stavsholtvegen'
+options.husnummer = 20
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Stavsholtvegen 20 Bø i Telemark')
+
+options.husnummer = 454
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Stavsholtvegen 454 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Stavsholtvegen'
+options.husnummer = 535
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Stavsholtvegen 535 Bø i Telemark')
+
+options.husnummer = 660
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Stavsholtvegen 660 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Sønstebøvegen'
+options.husnummer = 21
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Sønstebøvegen 21 Bø i Telemark')
+
+options.husnummer = 62
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Sønstebøvegen 62 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Sønstigardvegen'
+options.husnummer = 6
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Sønstigardvegen 6 Bø i Telemark')
+
+options.husnummer = 68
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Sønstigardvegen 68 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Torsbergåsen'
+options.husnummer = 1
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Torsbergåsen 1 Bø i Telemark')
+
+options.husnummer = 13
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Torsbergåsen 13 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Tveitanvegen'
+options.husnummer = 19
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Tveitanvegen 19 Bø i Telemark')
+
+options.husnummer = 89
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Tveitanvegen 89 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Vollevegen'
+options.husnummer = 4
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Vollevegen 4 Bø i Telemark')
+
+options.husnummer = 34
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Vollevegen 34 Bø i Telemark')
+
+options.postnummer = 3803
+options.gatenavn = 'Vreimsida'
+options.husnummer = 83
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Vreimsida 83 Bø i Telemark')
+
+options.husnummer = 927
+tap.equal(isTbr(options), false, 'Notodden vgs returns false from Vreimsida 927 Bø i Telemark')
 
 // 3810 GVARV
 options.postnummer = 3810
