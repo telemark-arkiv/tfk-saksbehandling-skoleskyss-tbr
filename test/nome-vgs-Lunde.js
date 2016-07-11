@@ -339,7 +339,7 @@ options.postnummer = 3744
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3744 Skien')
 
 options.postnummer = 3746
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3756 Skien')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3746 Skien')
 
 options.postnummer = 3747
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from 3747 Skien')
@@ -606,8 +606,8 @@ options.gatenavn = 'Skoevegen'
 options.husnummer = 1
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Skoevegen 1 Bø i Telemark')
 
-options.husnummer = 1129
-tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Seljordvegen 1129 Bø i Telemark')
+options.husnummer = 8
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Skoevegen 8 Bø i Telemark')
 
 options.postnummer = 3803
 options.gatenavn = 'Stavsholtvegen'
@@ -680,8 +680,8 @@ options.gatenavn = 'Heivegen'
 options.husnummer = 17
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Heivegen 17 Gvarv')
 
-options.husnummer = 16
-tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Heivegen 16 Gvarv')
+options.husnummer = 196
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Heivegen 196 Gvarv')
 
 options.postnummer = 3810
 options.gatenavn = 'Strannavegen'
@@ -737,7 +737,7 @@ options.husnummer = 1
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Noradalsvegen 1 Gvarv')
 
 options.husnummer = 22
-tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Noradalsvegen 21 Gvarv')
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Noradalsvegen 22 Gvarv')
 
 options.postnummer = 3810
 options.gatenavn = 'Kåsinvegen'
@@ -814,7 +814,7 @@ tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Ju
 options.postnummer = 3810
 options.gatenavn = 'Bøvegen'
 options.husnummer = 1
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Bøvegen 184 Gvarv')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Bøvegen 1 Gvarv')
 
 options.husnummer = 185
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Bøvegen 185 Gvarv')

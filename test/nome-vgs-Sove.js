@@ -107,7 +107,7 @@ options.postnummer = 3684
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve, avdeling Søve returns true from 3684 Notodden')
 
 options.postnummer = 3691
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve, avdeling Søve returns true from 3671 Gransherad')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve, avdeling Søve returns true from 3691 Gransherad')
 // End of Notodden
 
 // Porsgrunn

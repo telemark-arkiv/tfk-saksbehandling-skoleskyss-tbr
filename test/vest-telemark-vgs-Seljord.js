@@ -67,7 +67,7 @@ options.postnummer = 3805
 tap.equal(isTbr(options), true, 'Vest Telemark vgs, avdelig Seljord  returns true from 3805 Bø i Telemark')
 
 options.postnummer = 3748
-tap.equal(isTbr(options), false, 'Vest Telemark vgs, avdelig Seljord  returns false from 3848 Siljan')
+tap.equal(isTbr(options), false, 'Vest Telemark vgs, avdelig Seljord  returns false from 3748 Siljan')
 
 options.postnummer = 3729
 tap.equal(isTbr(options), true, 'Vest Telemark vgs, avdelig Seljord  returns true from 3729 Skien')

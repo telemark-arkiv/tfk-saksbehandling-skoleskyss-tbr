@@ -10,58 +10,58 @@ var options = {
 }
 
 options.postnummer = 3960
-tap.equal(isTbr(options), false, 'hjalmar-vgs-Fritidsparken returns false from 3960 Stathelle')
+tap.equal(isTbr(options), false, 'Hjalmar-vgs-Fritidsparken returns false from 3960 Stathelle')
 
 options.postnummer = 3800
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3800 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3800 Bø i Telemark')
 
 options.postnummer = 3801
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3801 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3801 Bø i Telemark')
 
 options.postnummer = 3802
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3802 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3802 Bø i Telemark')
 
 options.postnummer = 3803
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3803 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3803 Bø i Telemark')
 
 options.postnummer = 3804
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3804 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3804 Bø i Telemark')
 
 options.postnummer = 3750
-tap.equal(isTbr(options), false, 'hjalmar-vgs-Fritidsparken returns false from 3750 Drangedal')
+tap.equal(isTbr(options), false, 'Hjalmar-vgs-Fritidsparken returns false from 3750 Drangedal')
 
 options.postnummer = 3825
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3825 Lunde')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3825 Lunde')
 
 options.postnummer = 3830
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns ture from 3830 Ulefoss')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3830 Ulefoss')
 
 options.postnummer = 3672
-tap.equal(isTbr(options), false, 'hjalmar-vgs-Fritidsparken returns false from 3672 Notodden')
+tap.equal(isTbr(options), false, 'Hjalmar-vgs-Fritidsparken returns false from 3672 Notodden')
 
 options.postnummer = 3810
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3810 Gvarv')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3810 Gvarv')
 
 options.postnummer = 3811
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3811 Hørte')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3811 Hørte')
 
 options.postnummer = 3812
-tap.equal(isTbr(options), false, 'hjalmar-vgs-Fritidsparken returns false from 3812 Akkerhaugen')
+tap.equal(isTbr(options), false, 'Hjalmar-vgs-Fritidsparken returns false from 3812 Akkerhaugen')
 
 options.postnummer = 3805
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3805 Bø i Telemark, Seljord')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3805 Bø i Telemark, Seljord')
 
 options.postnummer = 3840
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3840 Seljord')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3840 Seljord')
 
 options.postnummer = 3841
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3841 Flatdal')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3841 Flatdal')
 
 options.postnummer = 3702
-tap.equal(isTbr(options), false, 'hjalmar-vgs-Fritidsparken returns false from 3702 Skien')
+tap.equal(isTbr(options), false, 'Hjalmar-vgs-Fritidsparken returns false from 3702 Skien')
 
 options.postnummer = 3729
-tap.equal(isTbr(options), true, 'hjalmar-vgs-Fritidsparken returns true from 3729 Skien')
+tap.equal(isTbr(options), true, 'Hjalmar-vgs-Fritidsparken returns true from 3729 Skien')
 
 options.postnummer = 3652
-tap.equal(isTbr(options), false, 'hjalmar-vgs-Fritidsparken returns false from 3652 Hovin i Telemark')
+tap.equal(isTbr(options), false, 'Hjalmar-vgs-Fritidsparken returns false from 3652 Hovin i Telemark')

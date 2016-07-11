@@ -105,7 +105,7 @@ tap.equal(isTbr(options), false, 'Bø vgs returns false from Breskelivegen 140 B
 options.postnummer = 3803
 options.gatenavn = 'Eikavegen'
 options.husnummer = 64
-tap.equal(isTbr(options), true, 'Bø vgs returns true from Eikavegen 21 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Bø vgs returns true from Eikavegen 64 Bø i Telemark')
 
 options.husnummer = 65
 tap.equal(isTbr(options), false, 'Bø vgs returns false from Eikavegen 65 Bø i Telemark')
@@ -154,9 +154,11 @@ options.postnummer = 3803
 options.gatenavn = 'Garvikstrondi'
 options.husnummer = 1234
 tap.equal(isTbr(options), true, 'Bø vgs returns true from Garvikstrondi 1234 Bø i Telemark')
-// End of split street
+
 options.husnummer = 1236
 tap.equal(isTbr(options), false, 'Bø vgs returns false from Garvikstrondi 1236 Bø i Telemark')
+
+// End of split street
 
 options.postnummer = 3803
 options.gatenavn = 'Garvikvegen'
@@ -365,8 +367,8 @@ options.gatenavn = 'Heivegen'
 options.husnummer = 17
 tap.equal(isTbr(options), true, 'Bø vgs returns true from Heivegen 17 Gvarv')
 
-options.husnummer = 16
-tap.equal(isTbr(options), false, 'Bø vgs returns false from Heivegen 16 Gvarv')
+options.husnummer = 196
+tap.equal(isTbr(options), false, 'Bø vgs returns false from Heivegen 196 Gvarv')
 
 options.postnummer = 3810
 options.gatenavn = 'Strannavegen'
@@ -499,7 +501,7 @@ tap.equal(isTbr(options), false, 'Bø vgs returns false from Juvevegen 12 Gvarv'
 options.postnummer = 3810
 options.gatenavn = 'Bøvegen'
 options.husnummer = 1
-tap.equal(isTbr(options), true, 'Bø vgs returns true from Bøvegen 184 Gvarv')
+tap.equal(isTbr(options), true, 'Bø vgs returns true from Bøvegen 1 Gvarv')
 
 options.husnummer = 185
 tap.equal(isTbr(options), false, 'Bø vgs returns false from Bøvegen 185 Gvarv')
