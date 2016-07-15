@@ -24,8 +24,8 @@ module.exports = function transportByTbr (options) {
   const postnummer = parseInt(options.postnummer, 10)
   const gatenavn = options.gatenavn
   const husnummer = parseInt(options.husnummer, 10)
-  // Sjekk for specials ved gatenavn og husnummer
 
+  // Sjekk for specials ved gatenavn og husnummer
   if (isFile(fileNameSpecials)) {
     const specials = require('./' + fileNameSpecials)
     if (specials[postnummer.toString()]) {
