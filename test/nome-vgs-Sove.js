@@ -4,7 +4,9 @@ const tap = require('tap')
 const isTbr = require('../index')
 var options = {
   skoleid: 3830,
-  postnummer: ''
+  postnummer: '',
+  gatenavn: 'Djevelgaten',
+  husnummer: '666'
 }
 
 options.postnummer = 3960
@@ -105,7 +107,7 @@ options.postnummer = 3684
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve, avdeling Søve returns true from 3684 Notodden')
 
 options.postnummer = 3691
-tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve, avdeling Søve returns true from 3671 Gransherad')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve, avdeling Søve returns true from 3691 Gransherad')
 // End of Notodden
 
 // Porsgrunn
@@ -260,6 +262,12 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3841
 options.postnummer = 3844
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Søve returns false from 3844 Åmotsdal')
 
+// Siljan
+options.postnummer = 3748
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3748 Siljan')
+options.postnummer = 3749
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3749 Siljan')
+
 // Skien
 options.postnummer = 3701
 tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3701 Skien')
@@ -411,3 +419,7 @@ tap.equal(isTbr(options), true, 'Nome vgs, avdeling Søve returns true from 3799
 
 options.postnummer = 3652
 tap.equal(isTbr(options), false, 'Nome vgs, avdeling Søve returns false from 3652 Hovin i Telemark')
+
+// 3803 Bø i Telemark Hovedregel SANN - Specials er også SANN
+
+// 3810 Gvarv Hovedregel SANN - Specials er også SANN

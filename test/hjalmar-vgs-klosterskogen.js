@@ -4,7 +4,9 @@ const tap = require('tap')
 const isTbr = require('../index')
 var options = {
   skoleid: 3730,
-  postnummer: ''
+  postnummer: '',
+  gatenavn: 'Djevelgaten',
+  husnummer: '666'
 }
 
 options.postnummer = 3960
