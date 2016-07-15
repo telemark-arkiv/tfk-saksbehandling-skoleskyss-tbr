@@ -420,10 +420,10 @@ tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Br
 options.postnummer = 3803
 options.gatenavn = 'Eikavegen'
 options.husnummer = 64
-tap.equal(isTbr(options), true, 'Bø vgs returns true from Eikavegen 21 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Nome vgs, avdeling Lunde returns true from Eikavegen 21 Bø i Telemark')
 
 options.husnummer = 65
-tap.equal(isTbr(options), false, 'Bø vgs returns false from Eikavegen 65 Bø i Telemark')
+tap.equal(isTbr(options), false, 'Nome vgs, avdeling Lunde returns false from Eikavegen 65 Bø i Telemark')
 
 options.postnummer = 3803
 options.gatenavn = 'Espedalsvegen'

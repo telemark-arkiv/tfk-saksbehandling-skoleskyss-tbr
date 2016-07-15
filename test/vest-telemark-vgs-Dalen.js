@@ -10,4 +10,4 @@ var options = {
 }
 
 options.postnummer = 3960
-tap.equal(isTbr(options), false, 'Vest Telemark vgs, avdelig Dalen returns false from 3960 Stathelle')
+tap.equal(isTbr(options), false, 'Vest Telemark vgs, avdeling Dalen returns false from 3960 Stathelle')

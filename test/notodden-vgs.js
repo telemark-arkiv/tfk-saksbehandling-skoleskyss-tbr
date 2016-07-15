@@ -53,7 +53,7 @@ tap.equal(isTbr(options), false, 'Notodden vgs returns false from Gvarvvegen 334
 options.postnummer = 3803
 options.gatenavn = 'Bakåskollen'
 options.husnummer = 1
-tap.equal(isTbr(options), true, ' returns true from Bakåskollen 1 Bø i Telemark')
+tap.equal(isTbr(options), true, 'Notodden vgs returns true from Bakåskollen 1 Bø i Telemark')
 
 options.husnummer = 14
 tap.equal(isTbr(options), false, 'Notodden vgs returns false from Bakåskollen 14 Bø i Telemark')
