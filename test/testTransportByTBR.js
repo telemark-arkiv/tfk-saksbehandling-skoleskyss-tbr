@@ -34,6 +34,18 @@ tap.throws(
   {message: 'Missing required input: options.skoleid'},
   'requires options.skoleid to exist'
 )
+tap.throws(
+  function () {
+    const options = {
+      postnummer: true,
+      skoleid: true,
+      gatenavn: false
+    }
+    transportByTbr(options)
+  },
+  {message: 'Missing required input: options.gatenavn'},
+  'requires options.gatenavn to exist'
+)
 
 tap.throws(
   function () {
