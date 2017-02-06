@@ -2,6 +2,8 @@
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-saksbehandling-skoleskyss-tbr/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-saksbehandling-skoleskyss-tbr?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-saksbehandling-skoleskyss-tbr
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-saksbehandling-skoleskyss-tbr.svg)](https://greenkeeper.io/)
 Node-module for identifying Telemark Bilruter as transporter.
 
 It uses a combination of zipcodes and schoolids.
