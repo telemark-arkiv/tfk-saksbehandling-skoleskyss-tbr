@@ -1,6 +1,6 @@
 {
   "name": "tfk-saksbehandling-skoleskyss-tbr",
-  "version": "6.0.16",
+  "version": "6.0.17",
   "description": "Checks if TBR is transporter",
   "license": "MIT",
   "author": {
@@ -36,7 +36,7 @@
     "coveralls": "2.13.1",
     "nsp": "2.6.3",
     "standard": "10.0.2",
-    "tap": "10.4.0"
+    "tap": "10.3.3"
   },
   "dependencies": {
     "is-file": "1.0.0"
